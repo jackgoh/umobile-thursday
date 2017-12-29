@@ -1,6 +1,6 @@
 # UMobile TERER Thursday Grabber
 
-This script is to automatically grab UMobile Thursday free deal without interacting with mobile apps. 
+Automatically grab UMobile TERER Thursday deal without interacting with mobile apps. 
 
 ##### Currently still under development. Require running it manually every Thursday or Wednesday night.
 
