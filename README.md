@@ -5,7 +5,7 @@ Automatically grab UMobile TERER Thursday deal without interacting with mobile a
 ##### Currently still under development. Require running it manually every Thursday or Wednesday night.
 
 ## Usage
-- Clone this repo `git clone git@gitlab.com:coqnitics/fashion-color-service.git` 
+- Clone this repo `git clone git@github.com:jackgoh/umobile-thursday.git` 
 - Install dependencies `pip install -r requirements.txt`
 - Run `python main.py` 
 
