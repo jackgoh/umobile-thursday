@@ -15,6 +15,6 @@ Automatically grab UMobile TERER Thursday deal without interacting with mobile a
 - [x] List and assign voucher to account
 - [x] Error handling
 - [ ] Write test 
-- [ ] Integrate Tarvis
+- [ ] Integrate Travis
 - [ ] Cronbjob scripts
 - [ ] Web Service 
