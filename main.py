@@ -2,8 +2,6 @@ import time
 import requests 
 import sys
 import json
-from requests.packages.urllib3.util.retry import Retry
-from requests.adapters import HTTPAdapter
 from optparse import OptionParser
 
 # init
