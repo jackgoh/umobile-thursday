@@ -8,7 +8,7 @@ Automatically grab UMobile TERER Thursday deal without interacting with mobile a
 ## Usage
 - Clone this repo `git clone git@github.com:jackgoh/umobile-thursday.git` 
 - Install dependencies `pip install -r requirements.txt`
-- Run `python main.py` 
+- Run main.py -n [phone number] `python main.py -n 0181234567`
 
 ## Todo
 - [x] List and assign voucher to account
