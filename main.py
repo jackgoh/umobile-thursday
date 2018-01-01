@@ -25,12 +25,18 @@ while state:
         voucher = umobile.get_voucher_list(phone_number)
         voucher_list = json.loads(voucher.text)
         promo_voucher, campaign_id = umobile.get_promo_voucher(voucher_list)
-        return_data = umobile.assign_promo_voucher(campaign_id, phone_number)
-        if return_data.status_code == 200:
-            print('success')
+
+        if campaign_id == '0' or not campaign_id:
+            print('no promo voucher yet')
+
         else:
-            print('failed', return_data.text)
-        state = False
+            return_data = umobile.assign_promo_voucher(campaign_id, phone_number)
+            if return_data.status_code == 200:
+                print('success', return_data.text)
+            else:
+                print('failed', return_data.text)
+            state = False
 
     except Exception as e:
+        time.sleep(2)
         print(e)
