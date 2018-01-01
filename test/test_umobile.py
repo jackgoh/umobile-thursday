@@ -1,6 +1,6 @@
 from lib import umobile
 
-phone_number = 0101234567
+phone_number = '0101234567'
 
 def test_get_all_voucher():
     res = umobile.get_voucher_list(phone_number)
