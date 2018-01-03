@@ -11,10 +11,17 @@ Automatically grab UMobile TERER Thursday deal without interacting with mobile a
 - Install dependencies `pip install -r requirements.txt`
 - Run main.py -n [phone number] `python main.py -n 0181234567`
 
+## Cronjob 
+Use crontab to add job 
+ `crontab -e` 
+
+Add following line to crontab `0 8 * * 4 nohup python /paath_to_project/main.py > /tmp/umobile_grabber.log 2>&1`
+
+Note: More info about crontab refers to http://corntab.com
 ## Todo
 - [x] List and assign voucher to account
 - [x] Error handling
-- [ ] Write test 
-- [ ] Integrate Travis
+- [ ] Complete test 
+- [x] Integrate Travis
 - [ ] Cronbjob scripts
 - [ ] Web Service 
