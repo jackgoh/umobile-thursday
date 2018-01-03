@@ -11,6 +11,10 @@ Automatically grab UMobile TERER Thursday deal without interacting with mobile a
 - Install dependencies `pip install -r requirements.txt`
 - Run main.py -n [phone number] `python main.py -n 0181234567`
 
+## Scheduler 
+- change phone_num in `clock.py`
+- run `python clock.py`
+
 ## Cronjob 
 Use crontab to add job 
 
