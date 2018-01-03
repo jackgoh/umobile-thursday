@@ -18,10 +18,3 @@ Use crontab to add job
 Add following line to crontab `0 8 * * 4 nohup python /paath_to_project/main.py > /tmp/umobile_grabber.log 2>&1`
 
 Note: More info about crontab refers to http://corntab.com
-## Todo
-- [x] List and assign voucher to account
-- [x] Error handling
-- [x] Complete test 
-- [x] Integrate Travis
-- [x] Cronbjob guide
-- [ ] Web Service 
