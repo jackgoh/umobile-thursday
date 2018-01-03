@@ -27,8 +27,8 @@ while state:
         promo_voucher, campaign_id = umobile.get_promo_voucher(voucher_list)
 
         if campaign_id == '0' or not campaign_id:
-            print('no promo voucher yet')
-
+            time.sleep(5)
+            print('No promo voucher yet, retrying in 5 seconds')
         else:
             return_data = umobile.assign_promo_voucher(campaign_id, phone_number)
             if return_data.status_code == 200:
@@ -38,5 +38,5 @@ while state:
             state = False
 
     except Exception as e:
-        time.sleep(2)
-        print(e)
+        print('Server error, retrying in 3 seconds..', e)
+        time.sleep(3)
