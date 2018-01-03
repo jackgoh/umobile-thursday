@@ -21,7 +21,7 @@ Note: More info about crontab refers to http://corntab.com
 ## Todo
 - [x] List and assign voucher to account
 - [x] Error handling
-- [ ] Complete test 
+- [x] Complete test 
 - [x] Integrate Travis
 - [x] Cronbjob guide
 - [ ] Web Service 
