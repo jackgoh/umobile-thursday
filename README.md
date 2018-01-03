@@ -13,8 +13,11 @@ Automatically grab UMobile TERER Thursday deal without interacting with mobile a
 
 ## Cronjob 
 Use crontab to add job 
+
  `crontab -e` 
 
-Add following line to crontab `0 8 * * 4 nohup python /paath_to_project/main.py > /tmp/umobile_grabber.log 2>&1`
+Add following line to crontab 
+
+`0 8 * * 4 nohup python /paath_to_project/main.py > /tmp/umobile_grabber.log 2>&1`
 
 Note: More info about crontab refers to http://corntab.com
