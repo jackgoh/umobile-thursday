@@ -23,5 +23,5 @@ Note: More info about crontab refers to http://corntab.com
 - [x] Error handling
 - [ ] Complete test 
 - [x] Integrate Travis
-- [ ] Cronbjob scripts
+- [x] Cronbjob guide
 - [ ] Web Service 
