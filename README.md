@@ -6,11 +6,13 @@ Automatically grab UMobile TERER Thursday deal without interacting with mobile a
 
 ##### Currently still under development. Require running it manually every Thursday or Wednesday night.
 
-## Usage
+## Installation
 - Clone this repo `git clone git@github.com:jackgoh/umobile-thursday.git` 
+- Install Python 3.5 
 - Install dependencies `pip install -r requirements.txt`
 - Run main.py -n [phone number] `python main.py -n 0181234567`
 
-## Scheduler 
-- add environtment variable `clock.py`
+## Usage 
+- create `.env` file in root folder
+- add `PHONE_NUM=0100000000` to `.env` file
 - run `python clock.py`
