@@ -1,16 +1,16 @@
+from apscheduler.schedulers.blocking import BlockingScheduler
 import time
 import requests 
-import sys
+import os
 from lib import umobile
 import json
-from apscheduler.schedulers.blocking import BlockingScheduler
 
 session = requests.session()
 sched = BlockingScheduler({'apscheduler.timezone': 'Asia/Kuala_Lumpur'})
 
-@sched.scheduled_job('cron', day_of_week='thu', hour=8)
+@sched.scheduled_job('cron', day_of_week='thu', hour=8, minute=44)
 def main():
-    phone_number = "0101234567"
+    phone_number = os.environ['PHONE_NUM']
     state = True
     while state:
         try:

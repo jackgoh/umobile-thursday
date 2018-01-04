@@ -1,4 +1,5 @@
 .idea/
 *.pyc
+.env
 .cache
 git_rewrite.sh
