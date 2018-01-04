@@ -16,3 +16,6 @@ Automatically grab UMobile TERER Thursday deal without interacting with mobile a
 - create `.env` file in root folder
 - add `PHONE_NUM=0100000000` to `.env` file
 - run `python clock.py`
+
+
+## Deploy to Heroku 

@@ -1,0 +1,12 @@
+{
+  "name": "UThursday Promo Grabber",
+  "description": "A scheduler that automatically grab thursday deal without interacting with mobile app",
+  "repository": "https://github.com/jackgoh/umobile-thursday",
+  "keywords": ["python", "scheduler"],
+   "env": {
+    "PHONE_NUM": {
+      "description": "Your phone number",
+      "value": "0101234567"
+    },
+   }
+}
