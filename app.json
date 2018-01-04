@@ -6,7 +6,8 @@
    "env": {
     "PHONE_NUM": {
       "description": "Your phone number",
-      "value": "0101234567"
-    },
+      "value": "",
+      "required": true
+    }
    }
 }
