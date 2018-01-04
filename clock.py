@@ -4,9 +4,15 @@ import requests
 import os
 from lib import umobile
 import json
+import sys
 
 session = requests.session()
 sched = BlockingScheduler({'apscheduler.timezone': 'Asia/Kuala_Lumpur'})
+
+# check if phone exist
+if not os.environ['PHONE_NUM']:
+    print('Phone number not found in ENV')
+    sys.exit()
 
 @sched.scheduled_job('cron', day_of_week='thu', hour=8, minute=44)
 def main():
