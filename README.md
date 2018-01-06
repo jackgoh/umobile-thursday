@@ -1,4 +1,4 @@
-# UMobile TERER Thursday Grabber
+# UMobile TERER Thursday Bot
 [![Maintainability](https://api.codeclimate.com/v1/badges/d54491e0402f4e021a0b/maintainability)](https://codeclimate.com/github/jackgoh/umobile-thursday/maintainability)
 [![Build Status](https://travis-ci.org/jackgoh/umobile-thursday.svg?branch=master)](https://travis-ci.org/jackgoh/umobile-thursday)
 
