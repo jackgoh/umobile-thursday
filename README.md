@@ -2,7 +2,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/d54491e0402f4e021a0b/maintainability)](https://codeclimate.com/github/jackgoh/umobile-thursday/maintainability)
 [![Build Status](https://travis-ci.org/jackgoh/umobile-thursday.svg?branch=master)](https://travis-ci.org/jackgoh/umobile-thursday)
 
-Automatically grab UMobile TERER Thursday deal without interacting with mobile apps. 
+🍕 🍪 🍿 Automatically grab UMobile TERER Thursday deal without interacting with mobile apps. 🌭 🍔 🍟
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
