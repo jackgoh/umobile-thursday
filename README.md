@@ -4,7 +4,7 @@
 
 Automatically grab UMobile TERER Thursday deal without interacting with mobile apps. 
 
-##### Currently still under development. Require running it manually every Thursday or Wednesday night.
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Installation
 - Clone this repo `git clone git@github.com:jackgoh/umobile-thursday.git` 
