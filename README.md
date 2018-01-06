@@ -4,7 +4,12 @@
 
 Automatically grab UMobile TERER Thursday deal without interacting with mobile apps. 
 
+## Deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+## See logs
+- Install Heroku CLI https://devcenter.heroku.com/articles/heroku-cli
+`heroku logs` 
 
 ## Installation
 - Clone this repo `git clone git@github.com:jackgoh/umobile-thursday.git` 
@@ -16,6 +21,3 @@ Automatically grab UMobile TERER Thursday deal without interacting with mobile a
 - create `.env` file in root folder
 - add `PHONE_NUM=0100000000` to `.env` file
 - run `python clock.py`
-
-
-## Deploy to Heroku 
