@@ -19,7 +19,7 @@ if not os.environ['PHONE_NUM']:
     print('Phone number not found in ENV')
     sys.exit()
 
-@sched.scheduled_job('cron', day_of_week='thu', hour=8, minute=44)
+@sched.scheduled_job('cron', day_of_week='thu', hour=8, minute=0)
 def main():
     phone_number = os.environ['PHONE_NUM']
     state = True
