@@ -8,7 +8,7 @@ phone_number = '0101234567'
 # check timezone
 tz = pytz.timezone('Asia/Kuala_Lumpur')
 date_now = datetime.datetime.now(tz)
-today9am = date_now.replace(hour=8, minute=0, second=0, microsecond=0)
+today8am = date_now.replace(hour=8, minute=0, second=0, microsecond=0)
 
 def test_get_all_voucher():
     res = umobile.get_voucher_list(phone_number)
@@ -33,7 +33,7 @@ def test_assign_voucher_fail():
     res = umobile.assign_promo_voucher(0, phone_number)
     status = json.loads(res.text)
     print(status['error_message'])
-    if date_now.today().weekday() == 4 and date_now > today9am:
+    if date_now.today().weekday() == 4 and date_now > today8am:
         assert status['error_message'] == 'Success'
     else:
         assert status['error_message'] == 'Incomplete parameter'
