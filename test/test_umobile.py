@@ -22,7 +22,7 @@ def test_get_promo_voucher():
     # get promo voucher
     voucher, campaign_id = umobile.get_promo_voucher(voucher_list)
 
-    if date_now.today().weekday() == 4 and date_now > today8am:
+    if date_now.today().weekday() == 3 and date_now > today8am:
         assert len(campaign_id) == 1
     else:
         assert campaign_id is None
@@ -33,7 +33,7 @@ def test_assign_voucher_fail():
     res = umobile.assign_promo_voucher(0, phone_number)
     status = json.loads(res.text)
     print(status['error_message'])
-    if date_now.today().weekday() == 4 and date_now > today8am:
+    if date_now.today().weekday() == 3 and date_now > today8am:
         assert status['error_message'] == 'Success'
     else:
         assert status['error_message'] == 'Incomplete parameter'
