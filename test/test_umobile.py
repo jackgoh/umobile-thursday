@@ -8,7 +8,7 @@ phone_number = '0101234567'
 # check timezone
 tz = pytz.timezone('Asia/Kuala_Lumpur')
 date_now = datetime.datetime.now(tz)
-today9am = date_now.replace(hour=9, minute=0, second=0, microsecond=0)
+today9am = date_now.replace(hour=8, minute=0, second=0, microsecond=0)
 
 def test_get_all_voucher():
     res = umobile.get_voucher_list(phone_number)
@@ -22,7 +22,7 @@ def test_get_promo_voucher():
     # get promo voucher
     voucher, campaign_id = umobile.get_promo_voucher(voucher_list)
 
-    if date_now.today().weekday() == 4 and date_now > today9am:
+    if date_now.today().weekday() == 4 and date_now > today8am:
         assert len(campaign_id) == 1
     else:
         assert campaign_id is None
