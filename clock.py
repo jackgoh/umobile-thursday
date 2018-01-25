@@ -31,8 +31,8 @@ def main():
             promo_voucher, campaign_id = umobile.get_promo_voucher(voucher_list)
 
             if campaign_id == '0' or not campaign_id:
-                time.sleep(5)
-                print('No promo voucher yet, retrying in 5 seconds')
+                time.sleep(1)
+                print('No promo voucher yet, retrying in 1 seconds')
             else:
                 return_data = umobile.assign_promo_voucher(campaign_id, phone_number)
                 if return_data.status_code == 200:
@@ -42,7 +42,7 @@ def main():
                 state = False
 
         except Exception as e:
-            print('Server error, retrying in 3 seconds..', e)
+            print('Server error, retrying in 2 seconds..', e)
             time.sleep(3)
 
 sched.start()
